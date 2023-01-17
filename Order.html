@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Page</title>
+    <link rel="stylesheet" href="css/order.css">
+</head>
+<body>
+    <div class="container">
+        <header class="head">
+            <div class="header item-1">
+                <img class="home-logo" id="logo" src="images/logo.png" alt="The home page logo">
+            </div>
+            <div class="header item-2">
+                <h1>Order</h1>
+            </div>
+            <div class="header item-3">
+                <a class="link" href="mycart.html"><img class="cart-rep" id="cart-logo" src="images/index2.png" alt="a logo for shopping cart">MyCart</a>
+            </div>
+            <img class="toggle" src="/images/download.png" id="toggle-button" alt="an icon representing a toogle button">
+            <nav class="header item-4">
+                <ul>
+                    <li class="list"><a class="link list__link" href="index.html">Home</a></li>
+                    <li class="list"><a class="link list__link" href="About.html">About Us</a></li>
+                    <li class="list"><a class="link list__link" href="Review.html">Review</a></li>
+                    <li class="list"><a class="link list__link" href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="first-section">
+                <h1 class="instruction">Finish your order by filling the following form</h1>
+                <div class="video">
+                    <p>
+                        <a rel="transcript" class="link" for="the-video" title="English tanscript" href="#the-text">Transcirpt below</a>
+                    </p>
+                    <video controls="controls" id="the-video" width="100%">
+                        <source src="videos/Ecommerce video.mp4" type="video/mp4">
+                        <track label="English" kind="captions" src="caption.vtt" srclang="en-us" default>
+                    </video>
+                    <transcript id="the-text"><p>A short cartoon video making an online shopping</p></transcript>
+                </div>
+            </section>
+            <section class="user-information">
+                <h1 class="information-header">Contact information</h1>
+                <form class="contact-information" action="/" method="GET">
+                    <div class="information firstname">
+                        <label class="information__label" for="firstname">Firstname</label>
+                        <input class="information__input" type="text" id="firstname">
+                        <div class="information__error input-field__error"></div>
+                    </div>
+                    <div class="information lastname">
+                        <label class="information__label" for="lastname">Lastname</label>
+                        <input class="information__input" type="text" id="lastname">
+                        <div class="information__error input-field__error"></div>
+                    </div>
+                    <div class="information email">
+                        <label class="information__label" for="email">Email</label>
+                        <input class="information__input" type="email" id="email">
+                        <div class="information__error input-field__error"></div>
+                    </div>
+                    <div class="information phone">
+                        <label class="information__label" for="phone">Phone</label>
+                        <input class="information__input" type="tel" id="phone">
+                        <div class="information__error input-field__error"></div>
+                    </div>
+                </form>
+                <h1 class="information-header">Delivery</h1>
+                <form class="delivery">
+                    <div class="information date">
+                        <label class="information__label" for="date">Delivery date</label>
+                        <input class="information__input" type="date" id="date">
+                        <div class="information__error input-field__error"></div>
+                    </div>
+                    <div class="information time">    
+                        <label class="information__label" for="time">Convinient time</label>
+                        <input class="information__input" type="time" id="time">
+                        <div class="information__error input-field__error"></div>
+                    </div>
+                    <div class="city">
+                        <label class="information__label" for="city">City</label>
+                        <select class="information__select" id="city">
+                            <option>Addis Ababa</option>
+                            <option>Nairobi</option>
+                            <option>Hawassa</option>
+                            <option>New York</option>
+                            <option>Barcelona</option>
+                            <option>Paris</option>
+                            <option>London</option>
+                            <option>Tokyo</option>
+                            <option>Helsinki</option>
+                            <option>Berlin</option>
+                            <option>Rio</option>
+                            <option>Lisbon</option>
+                        </select>
+                    </div>
+                    <div class="information address">
+                        <label class="information__label" for="address">Address</label>
+                        <input class="information__input" type="text" id="address">
+                        <div class="information__error input-field__error"></div>
+                    </div>
+                </form>
+                <h1 class="information-header">Payment</h1>
+                <form class="payment">
+                    <div class="information card">
+                        <label class="information__label" for="card">Credit card number</label>
+                        <input class="information__input" type="text" id="card">
+                        <div class="information__error input-field__error"></div>
+                    </div>
+                </form>
+                        <button class="button" id="submit-button" type="submit">Submit</button>
+                        <div class="information__confirmation"></div>
+            </section>
+        </main>
+        <hr>
+        <footer class="foot">
+            <p class="copy">&copy;copyright Natinael Fekadu 2022</p>
+            <p class="frq"><a class="link link--secondary" href="FAQ.html">FAQ</a></p>
+            <p class="top"><a class="link link--secondary" href="#">Top</a></p>
+        </footer>
+        <script src="js/eccomerce.js"></script>
+    </div>
+</body>
+</html>

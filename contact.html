@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact page</title>
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+    <div class="container">
+        <header class="head">
+            <div class="header item-1">
+                <img class="home-logo" id="logo" src="images/logo.png" alt="The home page logo">
+            </div>
+            <div class="header item-2">
+                <a class="link" href="mycart.html"><img class="cart-rep" id="cart-logo" src="images/index2.png" alt="a logo for shopping cart">MyCart</a>
+            </div>
+            <img class="toggle" src="/images/download.png" id="toggle-button" alt="an icon representing a toogle button">
+            <nav class="header item-3">
+                <ul>
+                    <li class="list"><a class="link list__link" href="index.html">Home</a></li>
+                    <li class="list"><a class="link list__link" href="About.html">About Us</a></li>
+                    <li class="list"><a class="link list__link" href="Review.html">Review</a></li>
+                    <li class="list"><a class="link list__link" href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <h1 class="contact-message">Contact Us</h1>
+                <form class="form">
+                    <div class="input-field">
+                        <label class="input-field__label" for="name">Name</label>
+                        <input class="input-field__input" type="text" id="name"><br><br>
+                        <div class="input-field__error"></div>
+                    </div>
+                    <div class="input-field">    
+                        <label class="input-field__label" for="email">Email</label>
+                        <input class="input-field__input" type="text" id="email"><br><br>
+                        <div class="input-field__error"></div>
+                    </div>
+                    <div class="input-field">    
+                        <label class="input-field__label" for="phone">Phone</label>
+                        <input class="input-field__input" type="text" id="phone"><br><br>
+                        <div class="input-field__error"></div>
+                    </div>
+                    <div class="input-field">
+                    <div class="textarea">
+                        <label class="input-field__label input-field__label--textarea" for="message">Message</label><br>
+                        <textarea class="input-field__textarea" id="message"></textarea><br>
+                        <div class="input-field__error"></div>
+                    </div>
+                    </div>
+                        <button class="button" id="contact-button" type="submit">Send</button>
+                        <div class="form__response"></div>
+                </form>
+            </section> 
+            <section class="social-media">
+                    <p class="other-links">Other social media links</p>
+                    <div class="links">
+                        <a class="contact-link" href="https://www.facebook.com/profile.php?id=100034344473477"><img class="contact-link__img" src="images/facebook.png" alt="a small facebook logo image which serves as a link"></a>
+                        <a class="contact-link" href="https://web.telegram.org/k/#@Nati_key"><img class="contact-link__img" src="images/telegram.png" alt="a small telegram logo image which serves as a link"></a>
+                        <a class="contact-link" href="https://mail.google.com/mail/u/0/#inbox"><img class="contact-link__img" src="images/email.jpg" alt="a small email logo image which serves as a link"></a>
+                    </div>
+            </section>
+        </main>
+        <hr>
+        <footer class="foot">
+            <p class="copy">&copy;copyright Natinael Fekadu 2022</p>
+            <p class="frq"><a class="link link--secondary" href="FAQ.html">FAQ</a></p>
+            <p class="top"><a class="link link--secondary" href="#">Top</a></p>
+        </footer>
+    </div>
+    <script src="js/eccomerce.js"></script>
+</body>
+</html>
